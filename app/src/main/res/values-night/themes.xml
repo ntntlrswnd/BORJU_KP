@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.BORJU_KP" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryVariant">@color/PrimaryDark</item>
+        <item name="colorSecondary">@color/Secondary</item>
+        <item name="android:colorBackground">@color/Background</item>
+        <item name="colorSurface">@color/Surface</item>
+        <item name="android:textColorPrimary">@color/TextPrimary</item>
+        <item name="android:textColorSecondary">@color/TextSecondary</item>
+
+        <item name="android:statusBarColor">@color/PrimaryDark</item>
+        <item name="android:navigationBarColor">@color/Background</item>
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:buttonStyle">@style/Widget.Borju.Button</item>
+        <item name="android:textViewStyle">@style/Widget.Borju.TextView</item>
+    </style>
+
+    <style name="Widget.Borju.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/Surface</item>
+        <item name="android:backgroundTint">@color/Primary</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="Widget.Borju.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextPrimary</item>
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.ExtraBold" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/poppins_extrabold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerRound" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

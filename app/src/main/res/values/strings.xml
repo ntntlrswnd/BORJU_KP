@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BORJU</string>
+    <string name="cloudinary_cloud_name">dov8bkefl</string>
+    <string name="cloudinary_api_key">317242821532517</string>
+    <string name="cloudinary_api_secret">--f6IH0vpamFoCeVK76K4l3idlA</string>
+
+    <string-array name="payment_methods">
+        <item>Tunai</item>
+        <item>QRIS</item>
+        <item>Kartu Debit/Kredit</item>
+    </string-array>
+
+
+    <string-array name="order_statuses">
+        <item>Baru</item>
+        <item>Selesai</item>
+        <item>Dibatalkan</item>
+    </string-array>
+
+    <string-array name="transaction_types">
+        <item>Semua</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+</resources>

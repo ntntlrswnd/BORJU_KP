@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+    <application
+        android:name=".MyApplication" 
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BORJU_KP">
+
+        <!-- Activity Admin -->
+        <activity
+            android:name=".admin.DashboardAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProfileAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditProfileAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManajemenMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.FormTambahMenu"
+            android:exported="false" />
+        <activity
+            android:name=".admin.FormEditMenu" 
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManajemenPengeluaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.PengeluaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.RiwayatPesananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailPesananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManajemenUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.LaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.KasirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.CheckoutActivity"
+            android:exported="false" />
+
+        <!-- Activity Customer -->
+        <activity
+            android:name=".customer.DashboardCostumer"
+            android:exported="false" />
+
+        <!-- Activity Auth & Main -->
+        <activity
+            android:name=".auth.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>
